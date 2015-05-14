@@ -1,0 +1,47 @@
+// Fr33d0m's Description.ext
+// TMN Revive Demo
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 5;
+};
+
+author = "TMN Fr33d0m";
+OnLoadName = "327th INF Revive Test Mission"; 
+OnLoadMission = "327 Revive Module"; 
+onLoadIntro = "DesertRainInteractive.com"; 
+OnLoadMissionTime = 1; 
+onLoadIntroTime = 1; 
+loadingTexts[]=
+		{
+			"Remember to stay alert! 360 Security keeps teams alive.",
+			"Stay with your team! There is no worse news than finding yourself alone in the battlefield. ",
+			"Remember to keep track of your rounds as you fire them and reload often! Avoid running out of ammo at the worst moment.",
+			"Spend your money wisely! Only buy what you need."
+		};
+Respawn = 3; 
+respawnTemplatesWest[] = {"MenuPosition"};
+respawnDelay = 15; 
+respawnDialog = 1;
+disabledAI = 1;
+showMap = 1;
+disableChannels[]={0,6};
+enableDebugConsole = 1;
+
+
+// Transplant below this line for TMN Revive 2.0 Nothing above this line is important for the script to run. Everything BELOW this line, is important indeed. 
+
+class CfgMusic
+{
+	tracks[]={};
+
+	
+	class dead
+	{
+		name = "dead";
+		sound[] = {"\music\dead.ogg", db+0.85, 1.0};
+	};
+		
+};
